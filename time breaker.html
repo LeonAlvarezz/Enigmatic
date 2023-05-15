@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/692702b2fd.js" crossorigin="anonymous"></script>
+    <title>Time Breaker</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logo">
+            <a href=""><img src="img/Enigmatic White.png" alt=""></a>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </div>
+    </section>
+
+    <div class="navibar" id="navlinks">
+        <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<section class="time-breaker">
+    <div class="breaker-logo">
+        <video src="img/Time Breaker Promotion.mp4" autoplay muted></video>
+    </div>
+    <div class="row">
+        <div class="breaker-col">
+                <a href="Time Breaker Tee.html"><img src="img/Time Breaker Front.png" alt=""></a>
+                <h2>Time Breaker</h2>
+        </div>
+        <div class="breaker-col">
+                <a href="Time Breaker Beanie.html"><img src="img/Time Breaker Beanie.png" alt=""></a>
+            <h2>Time Breaker Beanie</h2>
+        </div>
+    </div>
+</section>
+   <section class="footer">
+       <div class="row">
+           <div class="footer-col">
+            <h1>Subscription</h1>
+            <p>Enter your email to join our club and recieve our product update</p>
+            <label>
+            <input type="text" placeholder="Enter your Email">
+            <button>Join</button>
+            </label>
+            </div>
+        <div class="footer-col">
+         <h1>Contact</h1>
+         <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <h2>@ 2022 Enigmatic</h2>
+    </div>
+    </div>
+   </section>
+
+   <script>
+        function hidemenu(){
+            document.getElementById("navlinks").style.right = "-200px";
+        }
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+    </script>
+</body>
+</html>
