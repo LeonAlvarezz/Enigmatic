@@ -1,0 +1,745 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+@font-face {
+    font-family: "Xenogears";
+    src: url(font/Xenogears_font.ttf);
+}
+@font-face {
+    font-family: "Consolas";
+    src: url(font/Consolas.ttf);
+}
+.header {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.logo img {
+    width: 500px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1%;
+}
+.logo .fa-solid {
+    color: white;
+    font-size: 20px;
+}
+.logo .fa-solid {
+    display: none;
+}
+@media (max-width: 700px) {
+    .logo img {
+        width: 200px;
+    }
+}
+.navibar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 15px;
+}
+.navibar ul {
+    margin-top: 10px;
+    list-style: none;
+}
+.navibar ul li {
+    display: inline-block;
+    font-family: "Xenogears";
+}
+.navibar ul li a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: white;
+    font-weight: 100;
+    font-size:  40px;
+    transition: 0.5s;
+
+}
+.navibar ul li:hover a {
+    color: blue;
+    font-size: 42px ;
+}
+.navibar .fa-solid {
+    color: white;
+    display: none;
+}
+@media (max-width: 700px) {
+    .logo .fa-solid {
+        display: inline-block;
+        color: white;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .navibar ul li a{
+        font-size: 20px;
+        
+    }
+    .navibar ul{
+        position: absolute;
+        top: 60px;
+        right: 10px;
+    }
+    .navibar {
+        position: fixed;
+        background: black;
+        height: 200vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 0.3s;
+    }
+    .navibar ul li {
+        margin-top: 20px;
+    }
+    .navibar ul li:hover a {
+        font-size: 22px;
+    }
+    .navibar .fa-solid {
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        display: inline-block;
+    }
+}
+.banner {
+    margin: auto;
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+}
+
+.featured {
+    width: 100%;
+}
+.row {
+    width: 99.9%;
+}
+.featured h1{
+    color: white;
+    font-family: "Xenogears";
+    font-weight: 100;
+    font-size: 60px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    display: inline-block;
+}
+
+.featured .row {
+    display: flex;
+    justify-content: space-evenly;
+}
+.featured-col img {
+    width: 320px;
+}
+.featured-col {
+    flex-basis: 24%;
+    border: groove 2px white;
+    padding: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 35px;
+
+}
+.featured-col h2{
+    font-family:"Xenogears";
+    color: white;
+    font-size: 25px;
+}
+@media (max-width: 700px) {
+    .featured h1 {
+        font-size: 30px ;
+        margin-left: 20px;
+    }
+}
+.collection {
+    margin: auto;
+    width: 100%;
+    padding-top: 50px;
+}
+.collection h1 {
+    color: white;
+    font-family: "Xenogears";
+    font-weight: 100;
+    font-size: 60px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    display: inline-block;
+}
+.container .col-md-12 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+
+}
+.container .col-md-12 img {
+    max-width: 100%;
+    border: solid 3px;
+    height: auto;
+    border-radius: 50px;
+    border: solid 3px white;
+}
+.container .col-md-12 a {
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 700px) {
+    .collection h1 {
+        font-size: 30px ;
+        margin-left: 20px;
+    }
+    .container .col-md-12 {
+        margin-bottom: 0px;
+    }
+}
+
+.description {
+    width: 100%;
+    margin: auto;
+}
+.description h1 {
+    margin-top: 100px;
+    color: white;
+    font-family: "Xenogears";
+    font-weight: 100;
+    font-size: 60px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    display: inline-block;
+}
+.description p {
+    font-family:"Consolas";
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+}
+.description-col{
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+.description-col img{
+    width: 90%;
+}
+@media (max-width: 800px) {
+    .description h1 {
+        font-size: 30px ;
+        margin-left: 20px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .description-col img {
+        margin-left: 50px;
+    }
+    .description-col p {
+        margin-top: 20px;
+        font-size: 10px;
+        margin-left: 50px;
+    }
+
+}
+@media (max-width: 700px) {
+    .description-col img {
+        margin-left: 37px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .description-col p {
+        margin-top: 20px;
+        font-size: 10px;
+        margin-left: 37px;
+    }
+}
+.footer {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.footer h1 {
+    margin-top: 100px;
+    color: white;
+    font-family: "Xenogears";
+    font-weight: 100;
+    font-size: 40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    display: inline-block;
+    text-align: left;
+}
+.footer p {
+    font-family: "Consolas";
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    padding: 1px 5px;
+}
+.footer input[type ="text"] {
+    border: none;
+    width: 460px;
+    height: 50px;
+    background-color: white;
+    font-family: "Consolas";
+    padding: 0 16px;
+
+}
+.footer label {
+    position: relative;
+}
+
+.footer button {
+    background-color: blue;
+    color: white;
+    font-family:"Consolas";
+    height: 50px;
+    width: 80px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.footer .row {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.footer .footer-col {
+    flex-basis: 50%;
+}
+.footer .icon .fa-brands {
+    color: White;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.footer .icon {
+    margin-right: 30px;
+}
+.footer h2 {
+    font-family: "Xenogears";
+    color: white;
+    margin-top: 15px;
+    font-weight: 100;
+    font-size: 30px;
+    
+}
+@media (max-width: 550px) {
+    .footer input[type ="text"] {
+        width: 300px;
+    }
+}
+
+/*----About---*/
+.about {
+    width: 100%;
+    margin: auto;
+}
+.about h1 {
+    font-family: "Xenogears";
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about img {
+    width: 100%;
+    opacity: 0.3;
+    margin-bottom: 50px
+}
+.about p {
+    color: white;
+    font-family: "Consolas";
+    font-size: 20px;
+}
+.about .text-box {
+    width: 80%;
+    margin: auto;
+    display: grid;
+}
+
+/*---Gallery---*/
+.gallery {
+    width: 100%;
+    margin: auto;
+}
+.gallery video{
+    width: 100%;
+    height: 500px;
+}
+.gallery h1 {
+    font-family: "Xenogears";
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+/*---Time Breaker---*/
+.time-breaker {
+    width: 100%;
+    margin: auto;
+}
+.time-breaker .row {
+    justify-content: space-evenly;
+}
+.breaker-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.breaker-col {
+    flex-basis:43%;
+    justify-content: space-between;
+    text-align: center;
+    border: groove 2px white;
+    padding: 50px;
+}
+.breaker-col img {
+    width: 500px;
+
+}
+.breaker-col h2 {
+    font-family: "Xenogears";
+    font-size: 30px;
+    color: white;
+}
+.breaker-logo video {
+    width: 1920px;
+}
+.hoodie img {
+    width: 440px;
+}
+
+@media (max-width: 800px) {
+    .breaker-col img{
+        width: 200px;
+    } 
+    .breaker-col {
+        margin-bottom: 30px;
+        margin-left: 30px;
+        width: 80%;
+    }
+    .time-breaker .row {
+        flex-direction: column;
+    }
+    .breaker-logo video {
+        width: 1000px;
+    }
+
+}
+@media (max-width: 400px) {
+    .breaker-logo video {
+        width: 800px;
+        margin-right: 20px;
+    }
+    .breaker-col {
+        margin-left: 50px;
+    }
+}
+@media (max-width: 300px) {
+    .breaker-logo video {
+        width: 800px;
+        margin-right: 0px;
+    }
+}
+
+
+/*---Team---*/
+.team {
+    margin: auto;
+    width: 100%;
+}
+.team h1 {
+    font-family:"Xenogears";
+    font-size: 50px;
+    color: white;
+    margin-left: 100px;
+}
+.team .row{
+    justify-content: space-between;
+}
+.team-col{
+    flex:1;
+}
+.team-col img {
+    width: 100%;
+}
+.team-col p {
+    font-family: "Consolas";
+    font-size: 20px;
+    color: white;
+}
+.text-box1 {
+    width: 90%;
+    margin-top: 150px;
+}
+.text-box1 h1 {
+    margin-left: 0;
+    text-align: center;
+    width: 90%;
+}
+/* .text-box2 {
+    width: 90%;
+    margin-top: 150px;
+    margin-left: 50px;;
+}
+.text-box2 h1 {
+    margin-left: 0;
+    text-align: center;
+    width: 90%;
+} */
+@media (max-width: 800px) {
+    .text-box1 {
+        width: 90%;
+        margin-right: 100px;
+        padding-left: 100px;
+    }
+    .team-col {
+        margin-top: 0px;
+        overflow: hidden;
+    }
+    .text-box1 h1 {
+        margin-bottom: 30px;
+    }
+}
+
+/*---Contact--*/
+.contact h1 {
+    font-family:"Xenogears";
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    
+}
+.contact-form {
+    width: 690px;
+    border: solid 2px white ;
+    border-radius: 10px;
+    padding-top: 30px;
+    font-family:"Consolas";
+    position: relative;
+}
+.contact-form input {
+    width: 550px;
+    padding: 2%;
+    margin: 2% 10%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+}
+.contact-form textarea {
+    width: 550px;
+    padding: 1%;
+    margin: 2% 10%;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+}
+.contact-form button {
+    padding: 1% 5%;
+    background-color: blue;
+    border: none;
+    outline: none;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 75%;
+    transition: 0.2s;
+
+
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form button:hover 
+{
+    background-color: rgb(218, 32, 32);
+}
+@media (max-width: 700px) {
+    .contact-form {
+        width: 350px;
+    }
+    .contact-form input {
+        width: 280px;
+    }
+    .contact-form textarea {
+        width: 280px;
+    }
+    .contact-form button {
+        margin-left: 71%;
+    }
+    .contact-form input::placeholder {
+        font-size: 15px;
+    }
+}
+
+
+/*---product details----*/
+.carousel{
+    width: 100%;
+    padding-top: 100px;
+    margin-left: 10%;
+}
+.carousel-item img {
+    width: 100%;
+}
+.product .row {
+    display: flex;
+    justify-content: space-between;
+}
+.product-col h1{
+    font-family:"Xenogears";
+    color: white;
+    margin-top: 150px;
+    font-size: 60px;
+    line-height: 100px;
+}
+.product-col {
+    flex-basis: 40%;
+}
+.product-col p{
+    font-family: "Xenogears";
+    color: white;
+    font-size: 40px;
+
+}
+.product-col select {
+    background-color: white;
+    caret-color: white;
+    font-family:"Consolas";
+    padding: 5px 200px 5px 5px;
+}
+option {
+    background-color: white;
+    color: black;
+    font-family: "Consolas";
+    padding: 5px 30px;
+}
+.product-col input {
+    display: block;
+    margin-top: 20px;
+    background-color: white;
+    padding: 5px;
+}
+.product-col button {
+    background-color: blue;
+    padding: 20px 50px ;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: "Consolas";
+    margin-top: 40px;
+    font-size: 25px;
+}
+.product-description p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Consolas";
+}
+.product-header h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+@media (max-width: 1000px) {
+    .product .row {
+        flex-direction: column;
+    }
+    .carousel {
+        width: 90%;
+        margin-left: 0px;
+    }
+    .product-col {
+        margin-left: 100px;
+    }
+    .product-col h1 {
+        font-size: 30px;
+    }
+    .product-col p {
+        font-size: 20px;
+    }
+    .footer-col {
+        margin-left: 170px;
+    }
+}
+@media (max-width: 400px) {
+    .footer-col {
+        margin-left: 20px;
+    }
+    .product-col {
+        margin-left: 50px;
+    }
+    .product-col h1 {
+        font-size: 30px;
+    }
+    .product-col p {
+        font-size: 20px;
+    }
+    .footer .icon {
+        margin-right:30px ;
+    }
+}
+.carousel-indicators {
+    background-color: transparent;
+}
+@media (max-width: 400px) {
+    .footer-col {
+        margin-left: 20px;
+    }
+    .product-col {
+        margin-left: 50px;
+    }
+    .product-col h1 {
+        font-size: 30px;
+    }
+    .product-col p {
+        font-size: 20px;
+    }
+    .footer .icon {
+        margin-right:30px ;
+    }
+}
+.carousel-indicators {
+    background-color: transparent;
+}
+@media (max-width: 1000px) {
+
+    .breaker-col {
+        margin-left: 100px;
+    }
+}
+@media (max-width: 600px) {
+    .footer-col{
+        margin-left: 20px;
+    }
+    .product-col {
+        margin-left: 60px;
+    }
+    .breaker-col {
+        margin-left: 60px;
+    }
+}
